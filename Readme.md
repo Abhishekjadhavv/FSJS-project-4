@@ -4,5 +4,5 @@
 
 I have built this project within 50 minutes.
 
-[click here](http://itsabhi.ml)
+[click here](https://abhi4.netlify.app)
 
