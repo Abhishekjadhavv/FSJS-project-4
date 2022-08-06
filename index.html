@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Home page</title>
+</head>
+
+<body>
+    <!-- ----- navbar here ------ -->
+    <header class="container">
+        <nav class="navbar flex space-between">
+            <div class="logo"><img src="img/Logo.png" alt=""></div>
+            <ul class="menu-items flex gap-15">
+                <li class="list-item active"><a href="#Home">Home</a></li>
+                <li class="list-item"><a href="#About">About</a></li>
+                <li class="list-item"><a href="#Services">Services</a></li>
+                <li class="list-item"><a href="#Portfolio">Portfolio</a></li>
+                <li class="list-item"><a href="#Pricing">Pricing</a></li>
+            </ul>
+            <div class="buttons flex gap-15">
+                <button class="btn">Contact Us</button>
+                <i class='bx bx-menu' id="bar"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- ----- navbar end here ------ -->
+    <main>
+        <!-- ---- home section here ----- -->
+         <section class="home-section container flex space-between">
+             <div class="home-content">
+                <h1 class="heading-text">We Help You <span>Crush</span> Your Competition</h1>
+                <p>Build trust to connect your brand to billions of users and grow your revenue through SEO.</p>
+                <button class="btn">See our services</button> 
+            </div>
+            <div class="home-img"><img src="/img/Header Illustration.svg"></div>
+         </section>
+
+        <!-- ---- home section end here ----- -->
+    </main>
+
+    <!-- ------- javascript here --- -->
+    <script>
+        const menu = document.querySelector(".menu-items"),
+        bar = document.querySelector("#bar");
+        bar.addEventListener("click",()=>{
+            menu.classList.toggle("active");
+            bar.classList.toggle("bx-x");
+        });
+    </script>
+
+</body>
+
+</html>
